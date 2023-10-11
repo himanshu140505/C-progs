@@ -1,0 +1,37 @@
+#include <stdio.h>
+int main(){
+
+    char operator;
+    double num1, num2;
+
+    printf("Enter an operator (+, -, *, /, %): ");
+    scanf("%c", &operator);
+
+    printf("Enter two numbers: ");
+    scanf("%lf %lf", &num1, &num2);
+
+	if (operator == '+')
+	{double sum = num1+num2;
+	printf("THE SUM OF %lf and %lf is %lf.",num1 ,num2, sum);
+	}
+	
+	else if (operator == '-')
+	{double difference = num1-num2;
+	printf("THE DIFFERENCE OF %lf and %lf is %lf.",num1 ,num2, difference);
+	}
+	
+	else if (operator == '*')
+	{double product = num1*num2;
+	printf("THE PRODUCT OF %lf and %lf is %lf.",num1 ,num2, product);
+	}
+	
+	else if (operator == '/')
+	{double division = num1/num2;
+	printf("ON DIVIDING %lf BY %lf WE GET %lf",num1 ,num2, division);
+	}
+	
+	else 
+	{printf("INVALID INPUT");
+	}
+	
+}
